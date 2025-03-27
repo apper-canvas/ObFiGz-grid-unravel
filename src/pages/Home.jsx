@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { motion } from 'framer-motion'
 import MainFeature from '../components/MainFeature'
 import SizeSelector from '../components/SizeSelector'
+import SudokuGuide from '../components/SudokuGuide'
 
 const Home = () => {
   const [activeTab, setActiveTab] = useState('solve')
@@ -97,16 +98,8 @@ const Home = () => {
             )}
             
             {activeTab === 'learn' && (
-              <div className="text-center py-12">
-                <p className="text-surface-600 dark:text-surface-400 mb-4">
-                  Learning resources coming soon!
-                </p>
-                <button 
-                  className="btn btn-primary"
-                  onClick={() => setActiveTab('solve')}
-                >
-                  Try Solver Instead
-                </button>
+              <div className="py-4">
+                <SudokuGuide />
               </div>
             )}
           </div>

@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { motion } from 'framer-motion'
 import MainFeature from '../components/MainFeature'
+import SizeSelector from '../components/SizeSelector'
 
 const Home = () => {
   const [activeTab, setActiveTab] = useState('solve')
@@ -87,16 +88,11 @@ const Home = () => {
             {activeTab === 'solve' && <MainFeature />}
             
             {activeTab === 'generate' && (
-              <div className="text-center py-12">
-                <p className="text-surface-600 dark:text-surface-400 mb-4">
-                  Generate new puzzles feature coming soon!
-                </p>
-                <button 
-                  className="btn btn-primary"
-                  onClick={() => setActiveTab('solve')}
-                >
-                  Try Solver Instead
-                </button>
+              <div className="py-8">
+                <h2 className="text-2xl font-bold text-center mb-8 text-surface-900 dark:text-white">
+                  Select Puzzle Size
+                </h2>
+                <SizeSelector />
               </div>
             )}
             

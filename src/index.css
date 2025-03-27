@@ -55,4 +55,28 @@
   .grid-cell-success {
     @apply bg-green-100 dark:bg-green-900/30 text-green-600 dark:text-green-400;
   }
+
+  .grid-4x4 {
+    @apply grid-cols-4;
+  }
+
+  .grid-6x6 {
+    @apply grid-cols-6;
+  }
+
+  .grid-9x9 {
+    @apply grid-cols-9;
+  }
+
+  .grid-border-4x4 {
+    @apply border-r-2 border-surface-400 dark:border-surface-600;
+  }
+
+  .grid-border-6x6 {
+    @apply border-r-2 border-surface-400 dark:border-surface-600;
+  }
+
+  .grid-border-9x9 {
+    @apply border-r-2 border-surface-400 dark:border-surface-600;
+  }
 }

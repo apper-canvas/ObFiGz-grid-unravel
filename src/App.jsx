@@ -4,6 +4,7 @@ import { Moon, Sun } from 'lucide-react'
 import { motion } from 'framer-motion'
 import Home from './pages/Home'
 import NotFound from './pages/NotFound'
+import PuzzleGame from './pages/PuzzleGame'
 
 function App() {
   const [darkMode, setDarkMode] = useState(() => {
@@ -57,6 +58,7 @@ function App() {
       <main>
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/puzzle/:size/:difficulty" element={<PuzzleGame />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </main>
